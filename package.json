@@ -1,0 +1,24 @@
+{
+  "name": "html2pptxgenjs",
+  "version": "0.0.2",
+  "description": "Convert HTML into PptxGenJS text",
+  "main": "dist/html2pptxgenjs.cjs.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://beyondit-it@dev.azure.com/beyondit-it/html2pptx/_git/html2pptx"
+  },
+  "author": "BeyondIt S.r.l.",
+  "license": "MIT",
+  "dependencies": {
+    "css": "^2.2.4",
+    "htmlparser2": "^4.1.0",
+    "parse-color": "^1.0.0"
+  },
+  "devDependencies": {
+    "pptxgenjs": "^3.1.1",
+    "rollup-plugin-terser": "^5.3.0"
+  }
+}
