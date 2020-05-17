@@ -1,6 +1,6 @@
 {
   "name": "html2pptxgenjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert HTML into PptxGenJS text",
   "main": "dist/html2pptxgenjs.cjs.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://beyondit-it@dev.azure.com/beyondit-it/html2pptx/_git/html2pptx"
+    "url": "https://github.com/it-beyondit/html2pptxgenjs"
   },
   "author": "BeyondIt S.r.l.",
   "license": "MIT",
