@@ -2,7 +2,7 @@
 //
 // Use of this source code is governed by an MIT-style license that can be found
 // in the LICENSE file or at https://opensource.org/licenses/MIT.
-import Context from './context.js';
+const {Context} = require('./context');
 
 const htmlparser2 = require('htmlparser2');
 
@@ -18,6 +18,7 @@ function htmlToPptxText(html, options) {
     }
 
     function addText(text) {
+
         textItems.push({ text, options: currentContext().toPptxTextOptions() });
 
         contextStack.forEach(c => {
@@ -37,13 +38,13 @@ function htmlToPptxText(html, options) {
         let context = Object.create(currentContext());
 
         contextStack.push(context);
-
         switch (name) {
             case 'a':
                 context.href = attr.href;
                 context.href_title = attr.title;
                 break;
             case 'b':
+            case 'strong':    
             case 'i':
             case 's':
             case 'sub':
@@ -158,4 +159,4 @@ function htmlToPptxText(html, options) {
     return textItems;
 }
 
-export { htmlToPptxText };
+module.exports ={htmlToPptxText};
