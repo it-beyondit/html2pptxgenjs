@@ -34,6 +34,7 @@ The following tags are supported:
     - ```href``` = target URL
     - ```title``` = title
 - ```<b>```: bold
+- ```<strong>```: bold
 - ```<b>```: line break
 - ```<del>```: strikethrough (same as ```<s>```)
 - ```<font>```: font

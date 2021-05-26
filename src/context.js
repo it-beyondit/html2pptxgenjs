@@ -201,9 +201,9 @@ Context.prototype.setStyle = function (style) {
 
 Context.prototype.toPptxTextOptions = function () {
     let options = {};
-
+    
     options.align = this.align;
-    options.bold = !!this.b;
+    options.bold = !!this.b || !!this.strong;
     options.breakLine = !!this.break;
     options.color = this.color;
     this.fill && (options.fill = this.fill);
@@ -238,5 +238,5 @@ Context.prototype.toPptxTextOptions = function () {
     return options;
 }
 
-export default Context;
+module.exports= {Context}
 
