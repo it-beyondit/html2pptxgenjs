@@ -1,4 +1,4 @@
-# Introduction 
+# Introduction
 Html2pptxgenjs provides a simple API for converting HTML into [PptxGenJS](https://github.com/gitbrent/PptxGenJS) text. It runs in both Node.js and a web browser.
 
 # Installation
@@ -35,11 +35,12 @@ The following tags are supported:
     - ```title``` = title
 - ```<b>```: bold
 - ```<b>```: line break
+- ```<em>```: italic
 - ```<del>```: strikethrough (same as ```<s>```)
 - ```<font>```: font
     - ```color```: color
     - ```face```: face, e.g. "Arial"
-    - ```size```: size (see Size) 
+    - ```size```: size (see Size)
 - ```<h1>```...```<h6>```: header
 - ```<i>```: italic
 - ```<ol>```: ordered list
@@ -47,6 +48,7 @@ The following tags are supported:
 - ```<pre>```: preformatted text (see Options)
 - ```<s>```: strikethrough
 - ```<strike>```: strikethrough (same as ```<s>```)
+- ```<strong>```: bold
 - ```<sub>```: subscript
 - ```<sup>```: superscript
 - ```<u>```: underline

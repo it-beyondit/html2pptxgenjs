@@ -44,8 +44,10 @@ function htmlToPptxText(html, options) {
                 context.href_title = attr.title;
                 break;
             case 'b':
+            case 'em':
             case 'i':
             case 's':
+            case 'strong':
             case 'sub':
             case 'sup':
             case 'u':

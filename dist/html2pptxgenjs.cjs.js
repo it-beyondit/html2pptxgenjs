@@ -207,15 +207,15 @@ Context.prototype.toPptxTextOptions = function () {
     let options = {};
 
     options.align = this.align;
-    options.bold = !!this.b;
+    options.bold = !!this.strong || !!this.b;
     options.breakLine = !!this.break;
     options.color = this.color;
-    this.fill && (options.fill = this.fill);
+    this.fill && (options.highlight = this.fill);
     options.fontFace = this.fontFace;
     options.fontSize = this.fontSize || this.defaultFontSize;
-    options.italic = !!this.i;
+    options.italic = !!this.em || !!this.i;
     this.shadow && (options.shadow = this.shadow);
-    options.strike = !!this.s;
+    this.s && (options.strike = this.s);
     options.subscript = !!this.sub;
     options.superscript = !!this.sup;
     options.underline = !!this.u;
@@ -284,8 +284,10 @@ function htmlToPptxText(html, options) {
                 context.href_title = attr.title;
                 break;
             case 'b':
+            case 'em':
             case 'i':
             case 's':
+            case 'strong':
             case 'sub':
             case 'sup':
             case 'u':

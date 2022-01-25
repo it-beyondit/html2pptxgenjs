@@ -1,6 +1,6 @@
 {
   "name": "html2pptxgenjs",
-  "version": "0.0.3",
+  "version": "0.0.3-unscrambl.1",
   "description": "Convert HTML into PptxGenJS text",
   "main": "dist/html2pptxgenjs.cjs.js",
   "scripts": {
