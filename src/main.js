@@ -55,6 +55,9 @@ function htmlToPptxText(html, options) {
             case 'strike':
                 context.s = true;
                 break;
+            case 'em':
+                context.i = true;
+                break;
             case 'br':
                 addBreak();
                 break;

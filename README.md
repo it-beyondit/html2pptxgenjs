@@ -42,6 +42,7 @@ The following tags are supported:
     - ```size```: size (see Size) 
 - ```<h1>```...```<h6>```: header
 - ```<i>```: italic
+- ```<em>```: italic
 - ```<ol>```: ordered list
 - ```<p>```: paragraph (see Options)
 - ```<pre>```: preformatted text (see Options)
